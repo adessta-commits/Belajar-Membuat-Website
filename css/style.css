@@ -1,0 +1,200 @@
+.gallery-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img{
+    transform: scale(1.1);
+}
+
+.gallery-item .overlay{
+ position: absolute;
+ inset: 0;
+ background-color: rgba(0, 0, 0, 0.4);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #fff;
+ font-weight: 600;
+ font-size: 18px;
+ opacity: 0;
+ transition: opacity 0.3s ease;
+}
+.gallery-item:hover .overlay{
+    opacity: 1;
+}
+
+.footer-container {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  border-top: 1px solid #ddd;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Bagian Brand/Logo */
+.footer-brand {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #004a8e; /* Biru khas detik */
+  margin: 0;
+}
+
+.logo span {
+  color: #e31e24; /* Merah khas detik */
+}
+
+.brand-tagline {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-color: #ddd; /* Ganti dengan gambar icon asli */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.copyright {
+  font-size: 11px;
+  color: #999;
+  line-height: 1.5;
+}
+
+/* Bagian Kolom Link */
+.footer-links {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.link-column {
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.link-column h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.link-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-column ul li {
+  margin-bottom: 8px;
+}
+
+.link-column ul li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 13px;
+}
+
+.link-column ul li a:hover {
+  color: #004a8e;
+  text-decoration: underline;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* HTML: <div class="rounded-edge"></div> */
+.rounded-edge {
+  aspect-ratio: 3/2;
+  clip-path: ellipse(85% 100% at 50% 0%);
+}
+
+.tentang-section {
+  position: relative;
+  background: #f8f9fa;
+  overflow: hidden;
+}
+
+/* Shape modern (pengganti rounded-edge lama) */
+.tentang-section::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #e9ecef;
+  clip-path: ellipse(80% 100% at 50% 0%);
+  z-index: 0;
+}
+
+/* Pastikan konten di atas shape */
+.tentang-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Image animation */
+.image-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.image-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.08);
+}
+
+/* Button efek */
+.btn-custom {
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
