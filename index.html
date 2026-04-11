@@ -17,17 +17,18 @@
 <body>
   <!-- Header -->
   <header>
-    <nav class="navbar navbar-expand-lg" style="background-color: #ffcee3" data-bs-theme="light">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg py-3" style="background-color: #ffcee3" data-bs-theme="light">
+      <div class="container-fluid px-md-5">
         <a class="navbar-brand" href="#">
-          <img src="img/gambar-3.jpg" alt="Bootstrap" width="30" height="24" />
+          <img src="img/gambar-3.jpg" alt="Logo" width="45" height="45" class="rounded-circle me-0"
+            style="object-fit: cover;" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav fs-5">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -49,6 +50,7 @@
   </header>
   <!-- End Header -->
 
+  <!-- Body -->
   <main>
     <section id="hero">
       <div id="carouselExampleCaptions" class="carousel slide">
@@ -115,24 +117,20 @@
           </div>
           <div class="col-md-8">
             <h2 class="fw-bold mb-3">
-              tentang
+              Tentang Website Ini
             </h2>
             <p class="text-muted">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Quasi omnis, unde reprehenderit aliquid fugit voluptates id
-              molestiae quas illum voluptatum quae corrupti ab magnam beatae
-              sapiente commodi deserunt enim tempore. Deserunt quidem illo,
-              vel tempora similique fuga pariatur quae sunt laboriosam
-              laudantium sapiente beatae, explicabo veritatis dicta officiis
-              aliquid sequi cupiditate consequatur enim molestias inventore
-              voluptatibus. Illo amet esse assumenda.
+              Website Purple Sky adalah platform informasi digital yang menyajikan berita terkini dan artikel menarik
+              dari berbagai topik. Dibangun sebagai wadah eksplorasi konten, website ini berfokus pada penyampaian
+              informasi yang jernih, navigasi yang mudah, dan pengalaman membaca yang nyaman bagi audiens.
             </p>
 
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam saepe accusantium
-              nostrum temporibus voluptate fugit cupiditate? Expedita fugit optio voluptatibus repellat, ratione iure
-              enim eum aliquid omnis animi accusamus. Quaerat.</p>
+            <p class="text-muted">Selain sebagai sumber informasi, Website Purple Sky juga berfungsi sebagai ruang
+              pengembangan kreativitas dalam dunia web development. Melalui struktur yang terus diperbarui, platform ini
+              mengutamakan kecepatan akses dan penyajian konten yang terorganisir, memastikan setiap pembaca dapat
+              menemukan perspektif baru dalam lingkungan digital yang terus berkembang.</p>
 
-            <a href="#" class="btn btn-primary btn-ig mt-3 btn-custom">Go ShomewShere</a>
+            <a href="#" class="btn btn-primary btn-ig mt-3 btn-custom">Go Shomewhere</a>
 
           </div>
 
@@ -142,62 +140,113 @@
 
     <section id="artikel" class="py-5">
       <div class="container">
-        <div class="text-center">
-          <h4>Berita</h4>
-          <p>deskripsi singkat artikel</p>
+        <div class="text-center mb-5">
+          <h4 class="fw-bold">Berita Menarik</h4>
+          <p class="text-muted">informasi yang mungkin berguna</p>
         </div>
-        <div class="row g-4">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card">
-              <img src="img/gambar-3.jpg" class="card-img-top" alt="gambar-3" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make
-                  up the bulk of the card’s content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+
+        <div class="row g-5">
+          <div class="col-lg-8">
+
+            <div class="card mb-4 border-0 border-bottom pb-3">
+              <div class="row g-0 align-items-center">
+                <div class="col-4">
+                  <a href="https://stiestekom.ac.id/berita/fenomena-pink-moon-hiasi-langit-awal-april-2026-ini-penjelasan-dan-cara-melihatnya/2026-03-30" class="img-zoom-container d-block">
+                    <img src="img/pink-moon.png" class="img-fluid rounded shadow-sm" alt="Berita"
+                      style="width: 100%; height: 180px; object-fit: cover;">
+                  </a>
+                </div>
+                <div class="col-8">
+                  <div class="card-body py-0 pe-0">
+                    <a href="https://stiestekom.ac.id/berita/fenomena-pink-moon-hiasi-langit-awal-april-2026-ini-penjelasan-dan-cara-melihatnya/2026-03-30" class="text-decoration-none">
+                      <h5 class="fw-bold text-primary">Fenomena Pink Moon Hiasi Langit Awal April 2026</h5>
+                    </a>
+                    <p class="card-text d-none d-md-block text-muted">Deskripsi berita yang lebih panjang untuk mengisi
+                      ruang di sisi kiri agar terlihat padat...</p>
+                    <p class="small text-secondary mb-0">2 jam yang lalu</p>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <div class="card mb-4 border-0 border-bottom pb-3">
+              <div class="row g-0 align-items-center">
+                <div class="col-4">
+                  <a href="link-berita-2.html" class="img-zoom-container d-block">
+                    <img src="img/gambar-1.jpg" class="img-fluid rounded shadow-sm" alt="Berita"
+                      style="width: 100%; height: 180px; object-fit: cover;">
+                  </a>
+                </div>
+                <div class="col-8">
+                  <div class="card-body py-0 pe-0">Judul
+                    <a href="link-berita-2.html" class="text-decoration-none">
+                      <h5 class="fw-bold text-primary">Judul Berita Utama Kedua yang Sangat Menarik</h5>
+                    </a>
+                    <p class="card-text d-none d-md-block text-muted">Deskripsi berita lainnya...</p>
+                    <p class="small text-secondary mb-0">2 jam yang lalu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-4 border-0 border-bottom pb-3">
+              <div class="row g-0 align-items-center">
+                <div class="col-4">
+                  <a href="link-berita-2.html" class="img-zoom-container d-block">
+                    <img src="img/gambar-1.jpg" class="img-fluid rounded shadow-sm" alt="Berita"
+                      style="width: 100%; height: 180px; object-fit: cover;">
+                  </a>
+                </div>
+                <div class="col-8">
+                  <div class="card-body py-0 pe-0">
+                    <a href="link-berita-2.html" class="text-decoration-none">
+                      <h5 class="fw-bold text-primary">Judul Berita Utama Kedua yang Sangat Menarik</h5>
+                    </a>
+                    <p class="card-text d-none d-md-block text-muted">Deskripsi berita lainnya...</p>
+                    <p class="small text-secondary mb-0">2 jam yang lalu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card">
-              <img src="img/gambar-3.jpg" class="card-img-top" alt="gambar-3" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make
-                  up the bulk of the card’s content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+
+          <div class="col-lg-4">
+            <h6 class="fw-bold mb-4">Terpopuler</h6>
+
+            <div class="d-flex align-items-start mb-3 border-bottom pb-2">
+              <a href="link-populer-1.html" class="img-zoom-container me-3 flex-shrink-0 text-decoration-none">
+                <img src="img/gambar-1.jpg" class="rounded" style="width: 120px; height: 90px; object-fit: cover;">
+              </a>
+              <div>
+                <a href="link-populer-1.html" class="text-decoration-none text-dark fw-semibold"
+                  style="font-size: 1.1rem;">
+                  Tips Belajar Coding untuk Pemula agar Cepat Bisa
+                </a>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card">
-              <img src="img/gambar-3.jpg" class="card-img-top" alt="gambar-3" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make
-                  up the bulk of the card’s content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+
+            <div class="d-flex align-items-start mb-3 border-bottom pb-2">
+              <a href="link-populer-1.html" class="img-zoom-container me-3 flex-shrink-0 text-decoration-none">
+                <img src="img/gambar-1.jpg" class="rounded" style="width: 120px; height: 90px; object-fit: cover;">
+              </a>
+              <div>
+                <a href="link-populer-1.html" class="text-decoration-none text-dark fw-semibold"
+                  style="font-size: 1.1rem;">
+                  Tips Belajar Coding untuk Pemula agar Cepat Bisa
+                </a>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card">
-              <img src="img/gambar-3.jpg" class="card-img-top" alt="gambar-3" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make
-                  up the bulk of the card’s content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+
+            <div class="mt-5">
+              <p class="text-muted small mb-1 text-center">- Ad -</p>
+              <div class="img-zoom-container shadow-sm">
+                <a href="https://google.com" target="_blank">
+                  <img src="img/gambar-1.jpg" class="img-fluid rounded" alt="Iklan" style="width: 100%; height: auto;">
+                </a>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -224,28 +273,31 @@
           </div>
           <div class="col-12 col-md-6 col-sm-4 col-lg-3">
             <div class="gallery-item">
-              <a href="img/gambar-1.jpg" data-lightbox="gallery"><img src="img/gambar-1.jpg" alt="gambar-1" class="img-fluid">
-              <div class="overlay">
-                <span>Lihat</span>
-              </div>
+              <a href="img/gambar-1.jpg" data-lightbox="gallery"><img src="img/gambar-1.jpg" alt="gambar-1"
+                  class="img-fluid">
+                <div class="overlay">
+                  <span>Lihat</span>
+                </div>
               </a>
             </div>
           </div>
           <div class="col-12 col-md-6 col-sm-4 col-lg-3">
             <div class="gallery-item">
-              <a href="img/gambar-1.jpg" data-lightbox="gallery"><img src="img/gambar-1.jpg" alt="gambar-1" class="img-fluid">
-              <div class="overlay">
-                <span>Lihat</span>
-              </div>
+              <a href="img/gambar-1.jpg" data-lightbox="gallery"><img src="img/gambar-1.jpg" alt="gambar-1"
+                  class="img-fluid">
+                <div class="overlay">
+                  <span>Lihat</span>
+                </div>
               </a>
             </div>
           </div>
           <div class="col-12 col-md-6 col-sm-4 col-lg-3">
             <div class="gallery-item">
-             <a href="img/gambar-1.jpg" data-lightbox="gallery"><img src="img/gambar-1.jpg" alt="gambar-1" class="img-fluid">
-              <div class="overlay">
-                <span>Lihat</span>
-              </div>
+              <a href="img/gambar-1.jpg" data-lightbox="gallery"><img src="img/gambar-1.jpg" alt="gambar-1"
+                  class="img-fluid">
+                <div class="overlay">
+                  <span>Lihat</span>
+                </div>
               </a>
             </div>
           </div>
@@ -253,26 +305,33 @@
       </div>
     </section>
   </main>
+  <!-- End Body -->
 
   <footer class="footer-container">
     <div class="footer-content">
 
       <div class="footer-brand">
-        <h2 class="logo">snake<span>com</span></h2>
+        <h2 class="logo">PurpleSky<span>com</span></h2>
         <p class="brand-tagline">part of detiknetwork</p>
         <div class="social-icons">
           <a href="#" class="icon whatsapp">
-            <img src="img/gambar-2.avif" alt="" class="icon whatsapp">
+            <img src="img/logo-whatsapp.jpeg" alt="whatsapp" class="icon whatsapp">
           </a>
           <a href="#" class="icon facebook">
-            <img src="img/gambar-1.jpg" alt="" class="icon facebook">
+            <img src="img/logo-facebook.jpeg" alt="facebook" class="icon facebook">
           </a>
           <a href="#" class="icon twitter">
-            <img src="img/gambar-1.jpg" alt="" class="icon twitter">
+            <img src="img/logo-twitter.png" alt="twitter" class="icon twitter">
           </a>
-          <a href="#" class="icon instagram"></a>
-          <a href="#" class="icon linkedin"></a>
-          <a href="#" class="icon youtube"></a>
+          <a href="#" class="icon instagram">
+            <img src="img/logo-instagram.jpeg" alt="instagram" class="icon instagram">
+          </a>
+          <a href="#" class="icon linkedin">
+            <img src="img/logo-linkedin.png" alt="linkedin" class="icon linkedin">
+          </a>
+          <a href="#" class="icon youtube">
+            <img src="img/logo-youtube.jpeg" alt="youtube" class="icon youtube">
+          </a>
         </div>
         <p class="copyright">Copyright @ 2026 detikcom. <br> All right reserved</p>
       </div>

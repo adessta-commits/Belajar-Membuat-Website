@@ -58,12 +58,12 @@
 .logo {
   font-size: 32px;
   font-weight: bold;
-  color: #004a8e; /* Biru khas detik */
+  color: #ac26d2; /* Biru khas detik */
   margin: 0;
 }
 
 .logo span {
-  color: #e31e24; /* Merah khas detik */
+  color: #1e49e3; /* Merah khas detik */
 }
 
 .brand-tagline {
@@ -129,7 +129,7 @@
 }
 
 .link-column ul li a:hover {
-  color: #004a8e;
+  color: #e320e7;
   text-decoration: underline;
 }
 
@@ -197,4 +197,19 @@
 .btn-custom:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+ /* Container gambar harus mengunci luapan (overflow) agar gambar tidak keluar kotak saat membesar */
+.img-zoom-container {
+    overflow: hidden;
+    border-radius: 8px; /* Menjaga sudut tetap melengkung */
+}
+
+.img-zoom-container img {
+    transition: transform 0.3s ease; /* Mengatur durasi animasi zoom */
+}
+
+/* Efek saat card atau item berita di-hover */
+.card:hover .img-zoom-container img, 
+.d-flex:hover .img-zoom-container img {
+    transform: scale(1.1); /* Gambar membesar 10% */
 }
